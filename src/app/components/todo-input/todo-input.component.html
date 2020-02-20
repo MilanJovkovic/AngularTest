@@ -1,0 +1,8 @@
+<input
+  type="number"
+  [(ngModel)]="inputValue"
+  [ngStyle]="{
+    'border-color': inputValue > 0 ? 'blue' : 'red',
+    color: inputValue > 0 ? 'blue' : 'red'
+  }"
+/>
