@@ -2,6 +2,7 @@ import { Action } from "@ngrx/store";
 import { TodoActionTypes } from "../shared/enum/todo-action-types.enum";
 
 export class ActionParent implements Action {
+  [x: string]: any;
   type: any;
 }
 
@@ -17,5 +18,15 @@ export class TodoIncrease implements ActionParent {
 
 export class TodoDecrease implements ActionParent {
   type = TodoActionTypes.Decrease;
+  constructor() {}
+}
+
+export class TodoReset implements ActionParent {
+  type = TodoActionTypes.Reset;
+  constructor() {}
+}
+
+export class TodoStop implements ActionParent {
+  type = TodoActionTypes.Stop;
   constructor() {}
 }
