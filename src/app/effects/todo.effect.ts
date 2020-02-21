@@ -1,22 +1,9 @@
-import { Injectable, APP_ID } from "@angular/core";
+import { Injectable } from "@angular/core";
 
 import { Actions, Effect, ofType } from "@ngrx/effects";
-import {
-  switchMap,
-  map,
-  catchError,
-  delay,
-  mergeMap,
-  mapTo,
-  takeUntil
-} from "rxjs/operators";
-import { Action, Store } from "@ngrx/store";
+import { delay, mergeMap, takeUntil } from "rxjs/operators";
 
-import { Observable, of, interval, merge } from "rxjs";
-
-import { TodoChange, TodoDecrease, TodoIncrease } from "../actions/todo.action";
-
-import { Todo } from "../models/Todo";
+import { of } from "rxjs";
 
 import { TodoActionTypes } from "../shared/enum/todo-action-types.enum";
 
