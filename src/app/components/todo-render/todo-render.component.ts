@@ -4,7 +4,6 @@ import { select, Store } from "@ngrx/store";
 import {
   TodoIncrease,
   TodoDecrease,
-  TodoChange,
   TodoReset,
   TodoStop
 } from "src/app/actions/todo.action";
