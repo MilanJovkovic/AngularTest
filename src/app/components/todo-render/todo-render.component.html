@@ -1,7 +1,7 @@
 <p>Value1: {{ todos[0].value }}</p>
 <p>Value2: {{ todos[1].value }}</p>
 
-<button [disabled]="clicked" (click)="actionStart(); clicked = true">
+<button (click)="actionStart()">
   Start
 </button>
 <button (click)="actionStop()">Stop</button>
